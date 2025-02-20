@@ -14,9 +14,11 @@ using namespace std;
 
 int main()
 {
-  int num1, den1, num2, den2, numSum, denMul;
+  // declaramos los numeradores y denominadores
+  int num1, den1, num2, den2;
   cout << "Este programa suma dos fracciones." << endl;
 
+  //entramos las 2 fracciones
   cout << "Entre el numerador de la 1ra fraccion: ";
   cin >> num1;
 
@@ -29,9 +31,12 @@ int main()
   cout << "Entre el denominador de la 1ra fraccion: ";
   cin >> den2;
 
+  // hacemos la suma de las fracciones en la variable numSum y la multiplicacion de los denominadores en la variable denMul
+  int numSum, denMul;
   numSum = (num1 * den2) + (num2 * den1);
   denMul = den1 * den2;
 
+  // se desplega la calculacion
   cout << "La suma es " << numSum << "/" << denMul << "." << endl;
 
   return 0;
